@@ -1,18 +1,24 @@
 ﻿namespace Academy.TaskSfida.BL
 {
-    public class Scuola : Indirizzo
+    public class Scuola
     {
         public string NomeScuola { get; set; }
         public string Specializzazione { get; set; }
-        public Scuola(string nomeScuola, string specializzazione, string via, int civico, string citta, int cap, string nazione) : base (via, civico, citta, cap, nazione)
+        public Indirizzo IndirizzoScuola { get; set; }
+
+        
+        public Scuola(string nomeScuola, string specializzazione, Indirizzo indirizzo)
         {
             NomeScuola = nomeScuola;
             Specializzazione = specializzazione;
+            IndirizzoScuola = indirizzo;
         }
 
-        public void getDettagliScuola()
+        public void getDettagliScuola1() 
         {
-            Console.WriteLine($"Nome Istituto: {NomeScuola}.\nSpecializzazione: {Specializzazione}.\n{getIndirizzo()}\n");
+            Console.WriteLine($"Nome Istituto: {NomeScuola}.\nSpecializzazione: {Specializzazione}." +
+                $"\nIndirizzo: {IndirizzoScuola.Via} n° {IndirizzoScuola.Civico}, {IndirizzoScuola.Citta}, {IndirizzoScuola.CAP}, {IndirizzoScuola.Nazione}.\n");
         }
+        
     }
 }

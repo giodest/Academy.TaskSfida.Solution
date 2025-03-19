@@ -16,11 +16,11 @@ namespace Academy.TaskSfida.BL
 
         public Indirizzo(string via, int civico, string citta, int cap, string nazione)
         {
-            this.Via = via;
-            this.Civico = civico;
-            this.Citta = citta;
-            this.CAP = cap;
-            this.Nazione = nazione;
+            Via = via;
+            Civico = civico;
+            Citta = citta;
+            CAP = cap;
+            Nazione = nazione;
         }
 
 
