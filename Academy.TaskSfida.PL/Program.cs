@@ -40,7 +40,7 @@ namespace Academy.TaskSfida.PL
 
             Console.WriteLine("\n\n");
 
-            studenti[2].getNumeroMatricola(); 
+            studenti[2].Matricola(); 
             professori[0].Insegna();
 
         }
