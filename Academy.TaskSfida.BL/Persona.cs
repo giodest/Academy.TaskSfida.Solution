@@ -24,25 +24,10 @@ namespace Academy.TaskSfida.BL
 
 
         
-        public void Informazioni() 
+        public virtual void Informazioni() 
         {
             Console.WriteLine($"Nome: {Nome}\nCognome: {Cognome}\nEtà: {Eta}\nIndirizzo: {IndirizzoPersona.Via} n° {IndirizzoPersona.Civico}, {IndirizzoPersona.Citta}, {IndirizzoPersona.CAP}, {IndirizzoPersona.Nazione}.");
-        }
-
-        public virtual void Mangia()
-        {
-            Console.WriteLine("La persona mangia.");
-        }
-
-        public virtual void Beve() 
-        {
-            Console.WriteLine("La persona beve");
-        }
-
-        public virtual void Dorme() 
-        {
-            Console.WriteLine("La persona dorme");
-        }      
+        }   
 
 
     }
