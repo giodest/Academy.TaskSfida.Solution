@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy.TaskSfida.PL", "Academy.TaskSfida.PL\Academy.TaskSfida.PL.csproj", "{8918835B-2962-4351-B8DD-965C9F27428D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy.TaskSfida.BL", "Academy.TaskSfida.BL\Academy.TaskSfida.BL.csproj", "{F6D7F3C5-61FA-42AD-BC2C-8B93C4BF3E6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8918835B-2962-4351-B8DD-965C9F27428D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8918835B-2962-4351-B8DD-965C9F27428D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8918835B-2962-4351-B8DD-965C9F27428D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6D7F3C5-61FA-42AD-BC2C-8B93C4BF3E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D7F3C5-61FA-42AD-BC2C-8B93C4BF3E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D7F3C5-61FA-42AD-BC2C-8B93C4BF3E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D7F3C5-61FA-42AD-BC2C-8B93C4BF3E6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
