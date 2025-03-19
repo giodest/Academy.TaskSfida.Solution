@@ -11,16 +11,16 @@ namespace Academy.TaskSfida.BL
 
         public int NumeroMatricola { get; set; } = numeroMatricola;
 
+        public void getNumeroMatricola() 
+        {
+            Console.WriteLine($"La matricola dello studente {Nome} {Cognome} è: {NumeroMatricola}.");
+        }
+
         public void Studia()
         {
             Console.WriteLine($"Lo studente {Nome} studia");
         }
-
-        public void getNumeroMatricola() 
-        {
-            Console.WriteLine($"La matricola dello studente {Nome} {Cognome} è: {NumeroMatricola}");
-        }
-
+                
         public override void Beve()
         {
             Console.WriteLine($"Lo studente {Nome} beve");

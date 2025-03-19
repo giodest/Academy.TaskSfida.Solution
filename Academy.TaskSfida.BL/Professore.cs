@@ -12,9 +12,10 @@ namespace Academy.TaskSfida.BL
         public string Disciplina { get; set; } = disciplina;
 
 
+        
         public void Insegna()
         {
-            Console.WriteLine($"Il professore {Nome} insegna {Disciplina}");
+            Console.WriteLine($"Il professore {Nome} {Cognome} insegna {Disciplina}");
         }
 
         public override void Beve()
