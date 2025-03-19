@@ -6,22 +6,25 @@ using System.Threading.Tasks;
 
 namespace Academy.TaskSfida.BL
 {
-    public class Studente : Indirizzo
+    public class Studente
     {
         public string Nome { get; set; }
         public string Cognome { get; set; }
         public int Eta { get; set; }
+        public Indirizzo IndirizzoStudente { get; set; }
 
-        public Studente(string nome, string cognome, int eta, string via, int civico, string citta, int cap, string nazione) : base(via, civico, citta, cap, nazione)
+        public Studente(string nome, string cognome, int eta, Indirizzo indirizzo)
         {
             Nome = nome;
             Cognome = cognome;
             Eta = eta;
+            IndirizzoStudente = indirizzo;
         }
 
         public void getDettagliStudente() 
         {
-            Console.WriteLine($"Nome Studente: {Nome}\nCognome Studente: {Cognome}\n{getIndirizzo()}\n");
+            Console.WriteLine($"Nome Studente: {Nome}\nCognome Studente: {Cognome}" +
+                $"\nIndirizzo: {IndirizzoStudente.Via} n° {IndirizzoStudente.Civico}, {IndirizzoStudente.Citta}, {IndirizzoStudente.CAP}, {IndirizzoStudente.Nazione}.\n");
         }
     }
 }
