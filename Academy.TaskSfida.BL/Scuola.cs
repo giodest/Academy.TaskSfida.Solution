@@ -18,9 +18,17 @@
             Studenti = new List<Studente>();
         }
 
+        public void Aggiungi(Professore professore)
+        {
+            AggiungiProfessore(professore);
+        }
 
+        public void Aggiungi(Studente studente)
+        {
+            AggiungiStudente(studente);
+        }
 
-        public void AggiungiProfessore(Professore professore)
+        private void AggiungiProfessore(Professore professore)
         {
             Professori.Add(professore);
         }
