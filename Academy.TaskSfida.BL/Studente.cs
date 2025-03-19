@@ -6,25 +6,35 @@ using System.Threading.Tasks;
 
 namespace Academy.TaskSfida.BL
 {
-    public class Studente
+    public class Studente(string nome, string cognome, int eta, int numeroMatricola, Indirizzo indirizzo) : Persona(nome, cognome, eta, indirizzo)
     {
-        public string Nome { get; set; }
-        public string Cognome { get; set; }
-        public int Eta { get; set; }
-        public Indirizzo IndirizzoStudente { get; set; }
 
-        public Studente(string nome, string cognome, int eta, Indirizzo indirizzo)
+        public int NumeroMatricola { get; set; } = numeroMatricola;
+
+        public void Studia()
         {
-            Nome = nome;
-            Cognome = cognome;
-            Eta = eta;
-            IndirizzoStudente = indirizzo;
+            Console.WriteLine($"Lo studente {Nome} studia");
         }
 
-        public void getDettagliStudente() 
+        public void getNumeroMatricola() 
         {
-            Console.WriteLine($"Nome Studente: {Nome}\nCognome Studente: {Cognome}" +
-                $"\nIndirizzo: {IndirizzoStudente.Via} n° {IndirizzoStudente.Civico}, {IndirizzoStudente.Citta}, {IndirizzoStudente.CAP}, {IndirizzoStudente.Nazione}.\n");
+            Console.WriteLine($"La matricola dello studente {Nome} {Cognome} è: {NumeroMatricola}");
         }
+
+        public override void Beve()
+        {
+            Console.WriteLine($"Lo studente {Nome} beve");
+        }
+
+        public override void Dorme()
+        {
+            Console.WriteLine($"Lo studente {Nome} dorme");
+        }
+
+        public override void Mangia()
+        {
+            Console.WriteLine($"Lo studente {Nome} mangia");
+        }
+
     }
 }

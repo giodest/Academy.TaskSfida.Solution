@@ -22,11 +22,6 @@ namespace Academy.TaskSfida.BL
             CAP = cap;
             Nazione = nazione;
         }
-
-
-        public virtual string getIndirizzo() 
-        {            
-            return $"Indirizzo: {Via} n° {Civico}, {Citta}, {CAP}, {Nazione}.";
-        }
+              
     }
 }
