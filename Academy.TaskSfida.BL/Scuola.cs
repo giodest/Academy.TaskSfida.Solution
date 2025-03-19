@@ -18,15 +18,21 @@
             Studenti = new List<Studente>();
         }
 
+
+
         public void AggiungiProfessore(Professore professore)
         {
             Professori.Add(professore);
         }
 
+
+
         public void AggiungiStudente(Studente studente)
         {
             Studenti.Add(studente);
         }
+
+
 
         public void getDettagliScuola() 
         {
@@ -58,8 +64,6 @@
                 }
             }
             Console.Write(".");
-
-
         }
         
     }

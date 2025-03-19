@@ -22,6 +22,11 @@ namespace Academy.TaskSfida.BL
             IndirizzoPersona = indirizzo;
         }
 
+        public virtual void getInformazioni() 
+        {
+            Console.WriteLine($"Nome: {Nome}\nCognome: {Cognome}\nEtà: {Eta}\nIndirizzo: {IndirizzoPersona.Via} n° {IndirizzoPersona.Civico}, {IndirizzoPersona.Citta}, {IndirizzoPersona.CAP}, {IndirizzoPersona.Nazione}.");
+        }
+
         public virtual void Mangia()
         {
             Console.WriteLine("La persona mangia.");
@@ -35,7 +40,7 @@ namespace Academy.TaskSfida.BL
         public virtual void Dorme() 
         {
             Console.WriteLine("La persona dorme");
-        }
+        }      
 
 
     }
