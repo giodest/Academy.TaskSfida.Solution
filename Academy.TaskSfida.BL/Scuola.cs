@@ -3,12 +3,16 @@
     public class Scuola : Indirizzo
     {
         public string NomeScuola { get; set; }
-        public Indirizzo IndirizzoScuola { get; set; }
-        public Studente StudentiScuola { get; set; }
-
-        public void getScuola()
+        public string Specializzazione { get; set; }
+        public Scuola(string nomeScuola, string specializzazione, string via, int civico, string citta, int cap, string nazione) : base (via, civico, citta, cap, nazione)
         {
-            Console.WriteLine($"Nome Istituto: {NomeScuola}.\nIndirizzo: {IndirizzoScuola.Via} n° {IndirizzoScuola.Civico}, {IndirizzoScuola.Citta}, {IndirizzoScuola.CAP}, {IndirizzoScuola.Nazione}.");
+            NomeScuola = nomeScuola;
+            Specializzazione = specializzazione;
+        }
+
+        public void getDettagliScuola()
+        {
+            Console.WriteLine($"Nome Istituto: {NomeScuola}.\nSpecializzazione: {Specializzazione}.\n{getIndirizzo()}\n");
         }
     }
 }

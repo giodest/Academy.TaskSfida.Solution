@@ -6,18 +6,13 @@ namespace Academy.TaskSfida.PL
     {
         static void Main(string[] args)
         {
-            var scuola1 = new Scuola();
-            var indirizzo = new Indirizzo();
-            indirizzo.Via = "Via dei monti";
-            indirizzo.Civico = 5;
-            indirizzo.Citta = "Lecce";
-            indirizzo.CAP = 45020;
-            indirizzo.Nazione = "Italia";
+            var scuola1 = new Scuola("Tommaso del Bene", "Scientifico", "Via dei monti", 5, "Lecce", 45020, "Italia");
+            var studente1 = new Studente("Giovanni", "Destratis", 26, "Via Giuseppe Mazzini", 30, "Lecce", 45320, "Italia");
 
-            scuola1.NomeScuola = "Tommaso del Bene";
-            scuola1.IndirizzoScuola = indirizzo;
-            scuola1.getScuola();
-
+            scuola1.getDettagliScuola();
+            scuola1.getIndirizzo();
+            studente1.getDettagliStudente();
+            studente1.getIndirizzo();
         }
     }
 }

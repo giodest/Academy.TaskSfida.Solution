@@ -14,12 +14,19 @@ namespace Academy.TaskSfida.BL
         public int CAP { get; set; }
         public string Nazione { get; set; }
 
-        /*
-        public virtual string getIndirizzo() 
+        public Indirizzo(string via, int civico, string citta, int cap, string nazione)
         {
-            var rc = "";
-            return rc = Via + Civico + Citta + CAP + Nazione;
+            this.Via = via;
+            this.Civico = civico;
+            this.Citta = citta;
+            this.CAP = cap;
+            this.Nazione = nazione;
         }
-        */
+
+
+        public virtual string getIndirizzo() 
+        {            
+            return $"Indirizzo: {Via} n° {Civico}, {Citta}, {CAP}, {Nazione}.";
+        }
     }
 }
