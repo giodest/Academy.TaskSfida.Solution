@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Academy.TaskSfida.BL
+namespace Academy.TaskSfida.BL.Entities
 {
-    public class Persona
+    public abstract class Utente
     {
         public string Nome { get; set; }
         public string Cognome { get; set; }
@@ -14,7 +14,7 @@ namespace Academy.TaskSfida.BL
         public Indirizzo IndirizzoPersona { get; set; }
 
 
-        public Persona(string nome, string cognome, int eta, Indirizzo indirizzo)
+        public Utente(string nome, string cognome, int eta, Indirizzo indirizzo)
         {
             Nome = nome;
             Cognome = cognome;
