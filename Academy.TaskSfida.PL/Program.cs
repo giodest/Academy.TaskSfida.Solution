@@ -1,11 +1,25 @@
-﻿using Academy.TaskSfida.BL;
+﻿using Academy.TaskSfida.BL.Entities;
+using Academy.TaskSfida.BL.Interfaces;
+using Academy.TaskSfida.BL.Managers;
+using Academy.TaskSfida.BL.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Academy.TaskSfida.PL
 {
     internal class Program
     {
         static void Main(string[] args)
-        {                   
+        {
+            var serviceCollection = new ServiceCollection();
+            serviceCollection.AddSingleton<IProfessoreService, ProfessoreService>();
+            serviceCollection.AddSingleton<IStudenteService, IStudenteService>();
+
+            serviceCollection.AddSingleton<StudenteManager>();
+            serviceCollection.AddSingleton<ProfessoreManager>();
+
+            var serviceProvider = serviceCollection.BuildServiceProvider();
+            var service1 = serviceProvider.GetService<StudenteManager>();
+            var service2 = serviceProvider.GetService<ProfessoreManager>();
 
             var studenti = new List<Studente>();
             studenti.Add(new Studente("Giovanni", "Destratis", 16, 11111, new Indirizzo("Via Per i Laghi", 21, "Torino", 54011, "Italia")));
@@ -33,6 +47,7 @@ namespace Academy.TaskSfida.PL
                 scuole[0].Aggiungi(studente);
                 studente.Informazioni();
             }
+
 
             Console.WriteLine("\n\n");
 

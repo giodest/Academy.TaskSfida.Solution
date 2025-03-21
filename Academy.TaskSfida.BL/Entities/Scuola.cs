@@ -1,4 +1,6 @@
-﻿namespace Academy.TaskSfida.BL
+﻿using Academy.TaskSfida.BL.Interfaces;
+
+namespace Academy.TaskSfida.BL.Entities
 {
     public class Scuola
     {

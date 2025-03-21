@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Academy.TaskSfida.BL
+namespace Academy.TaskSfida.BL.Entities
 {
     public class Indirizzo
     {
